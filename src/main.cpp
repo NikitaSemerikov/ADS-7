@@ -12,7 +12,6 @@ int main() {
         std::cout << "Test: train with " << n
             << " cars" << std::endl;
 
-        //all lights off
         Train train1;
         for (int j = 0; j < n; ++j) {
             train1.addCar(false);
@@ -20,7 +19,6 @@ int main() {
         int len1 = train1.getLength();
         int ops1 = train1.getOpCount();
 
-        //all lights on
         Train train2;
         for (int j = 0; j < n; ++j) {
             train2.addCar(true);
@@ -28,7 +26,6 @@ int main() {
         int len2 = train2.getLength();
         int ops2 = train2.getOpCount();
 
-        //random
         Train train3;
         for (int j = 0; j < n; ++j) {
             if (j % 2 == 0) {
